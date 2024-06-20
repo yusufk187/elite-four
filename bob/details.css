@@ -1,0 +1,237 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pokemon-details-container {
+    display: flex;
+    width: 100vw;
+        height: 100vh;
+        margin: 0;
+        background-color: #6b0404;
+        border-radius: 0;
+        box-shadow: none;
+    padding: 20px;
+    align-items: flex-start;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.left-section,
+.right-section {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.pokemon-image-container img {
+    max-width: 100%;
+        height: auto;
+            border-radius: 0;
+                box-shadow: none;
+                margin-left: 170px;
+                margin-top: 100px;
+}
+
+.pokemon-abilities {
+    padding-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+    margin-left: 100px;
+    margin-top: 90px;
+}
+
+.pokemon-info {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 100px;
+
+}
+
+.pokemon-info .pokemon-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #f8f8f8;
+}
+
+.pokemon-info .pokemon-species {
+    font-size: 1em;
+    color: #888;
+}
+
+.pokemon-info .pokemon-id {
+    font-size: 3em;
+    color: #ee0000;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.pokemon-stats {
+    margin-top: 100px;
+}
+
+.pokemon-stats .stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pokemon-stats .stat-name {
+    width: 25%;
+    text-align: left;
+    font-size: 0.9em;
+        color: #666;
+}
+
+.pokemon-stats .stat-bar-container {
+    width: 50%;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.pokemon-stats .stat-bar {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 4px;
+}
+
+.pokemon-stats .stat-value {
+    width: 5%;
+    text-align: left;
+    font-size: 0.9em;
+    color: #666;
+    margin-right: 100px;
+}
+
+.ability {
+    position: relative;
+        cursor: pointer;
+        text-decoration: underline;
+    display: inline-block;
+}
+
+.ability:hover::after {
+    content: attr(data-summary);
+    position: absolute;
+    left: 50%;
+        transform: translateX(-50%);
+    bottom: 100%;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap;
+    z-index: 1;
+    font-size: 0.8em;
+}
+
+.type-icon {
+    height: 20px;
+    width: auto;
+    margin: 0 5px;
+}
+.stat-bar-container {
+    background-color: #ddd;
+    border-radius: 4px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.stat-bar {
+    height: 20px;
+
+    background-color: #4caf50;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.stat-value {
+    color: white;
+    margin-left: 5px;
+
+    font-size: 0.8em;
+    z-index: 1;
+}
+
+.ability {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.ability:hover::after {
+    content: attr(data-summary);
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: max-content;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    z-index: 1;
+}
+
+/* Existing styles remain unchanged */
+
+/* Add the following styles for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .pokemon-details-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .left-section,
+    .right-section {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .pokemon-image-container img {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .pokemon-abilities {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .pokemon-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .pokemon-stats {
+        margin-top: 20px;
+    }
+
+    .stat-bar-container {
+        width: 100%;
+    }
+
+    .stat-bar {
+        height: 10px;
+    }
+
+    .stat-value {
+        margin-right: 0;
+    }
+}

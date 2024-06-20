@@ -1,0 +1,4 @@
+Plot Overview:
+In the Pokémon world, a mysterious celestial event occurs once every thousand years, known as the Astral Convergence. During this convergence, a portal opens to a celestial realm where ancient and powerful Pokémon reside. The convergence is believed to hold the key to unlocking extraordinary abilities and a deeper connection between Pokémon and their trainers.
+
+The player, a human who has been mysteriously transformed into a Pokémon, wakes up in a world where Pokémon have lost their memories due to the disruptive influence of the Astral Convergence. The player, with the help of a partner Pokémon, sets out on a journey to restore the memories of Pokémon and unravel the mysteries behind the Astral Convergence.

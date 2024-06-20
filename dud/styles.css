@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(pokemon1.png);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#homeButton {
+    background-image: url('master-ball03f4a260d00fd533cf388f4a3785738d.png');
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s;
+    margin-right: 1800px;
+    margin-top: 20px;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+#homeButton:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+#filter-container {
+    padding: 20px;
+    background-color: transparent
+}
+
+#filter-container input,
+#filter-container select {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    border: 2px solid #555;
+    color: black;
+    border-radius: 5px;
+}
+
+#filter-container input::placeholder,
+#filter-container select option {
+    color: black;
+}
+
+#filter-container input:focus,
+#filter-container select:focus {
+    outline: none;
+    border-color: #EE6B2F;
+}
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pokemon-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    color: #000;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-card img {
+    width: 80%;
+    height: auto;
+}
+
+.pokemon-card .pokemon-name,
+.pokemon-card .pokemon-types {
+    margin-top: 10px;
+}
+
+.pokemon-card .type-icon {
+    height: 15px;
+    width: auto;
+    margin: 0 2px;
+}
+#search-container {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+}
